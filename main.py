@@ -1,7 +1,7 @@
 import streamlit as st
 import telebot
 st.write("Hello World")
-api="5985194933:AAG3TEbCAkslC1Vh8B8CmrnU00gtdEit5w8"
+api="Your Api Token"
 bot = telebot.TeleBot(api)
 
 # Handle '/start' and '/help'
