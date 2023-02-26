@@ -1,4 +1,4 @@
 pyTelegramBotAPI==4.10.0
 Pillow==9.3.0
-rembg==2.3.31
+rembg==2.3.30
 
