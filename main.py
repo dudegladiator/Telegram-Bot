@@ -4,7 +4,7 @@ st.write("Hello World")
 api=st.secrets["apikey"]
 bot = telebot.TeleBot(api)
 import subprocess
-subprocess.run(['sudo', 'apt', 'install', 'tesseract-ocr'])
+
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['help', 'start'])
 def send_welcome(message):
