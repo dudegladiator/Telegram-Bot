@@ -82,7 +82,7 @@ def handle_photo(message):
     markup.add(KeyboardButton("Compress Image"))
     markup.add(KeyboardButton("Resize Image"))
     markup.add(KeyboardButton("Remove Background"))
-    markup.add(KeyboardButton("Add Border"))
+    
     bot.send_message(chat_id,"Choose the Option",reply_markup=markup)
 
 @bot.message_handler(func= lambda m: True)
