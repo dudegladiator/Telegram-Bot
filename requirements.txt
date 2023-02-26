@@ -1,5 +1,4 @@
-pyTelegramBotAPI
-Pillow
-rembg
-opencv-python
-pytesseract
+pyTelegramBotAPI==4.10.0
+--ignore-installed Pillow==9.3.0
+rembg==2.0.30
+
