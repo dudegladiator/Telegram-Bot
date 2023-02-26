@@ -61,7 +61,7 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 def First_time(message):
   chat_id=message.chat.id
   bot.send_message(chat_id,"Welcome to Image Manipulation Bot")
-  bot.send_message(chat_id,"How to use this bot \nSend Photo\nChoose option")
+  bot.send_message(chat_id,"To use this bot\n \n1->Send Photo\n2->Choose option")
 
 @bot.message_handler(content_types=['photo'])
 def handle_photo(message):
