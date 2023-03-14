@@ -1,13 +1,19 @@
 import streamlit as st
-import gradio as gr
+
 import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 st.write("Hello World")
 st.write("Project in Progress")
+import gradio as gr
+
 def greet(name):
-  return "hello " + name 
-demo = gr.interface(fn=greet,input="text",outputs="text")
-demo.launch()
+    return "Hello " + name + "!"
+
+demo = gr.Interface(fn=greet, inputs="text", outputs="text")
+    
+if __name__ == "__main__":
+    demo.launch()   
+    
 token=st.secrets["token"]
 bot = telebot.TeleBot(token)
 
