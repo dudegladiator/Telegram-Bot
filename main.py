@@ -4,9 +4,9 @@ import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 st.write("Hello World")
 st.write("Project in Progress")
-def hello(text):
-  return "hello " + text 
-demo = gr.interface(fn=hello,input="text",outputs="text")
+def greet(name):
+  return "hello " + name 
+demo = gr.interface(fn=greet,input="text",outputs="text")
 demo.launch()
 token=st.secrets["token"]
 bot = telebot.TeleBot(token)
